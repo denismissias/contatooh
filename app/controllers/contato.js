@@ -20,7 +20,7 @@ module.exports = function(app) {
 		Contato.findById(_id).exec().then(
 		function(contato) {
 			if (!contato)
-				throw new Error("Contato n„o encontrado");
+				throw new Error("Contato n√£o encontrado");
 			res.json(contato);
 		},
 		function(erro) {
